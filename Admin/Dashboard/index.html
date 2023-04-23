@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Arch | Log In">
+  <meta property="og:description" content="Admin Panel (Designed with ♥ by Aditya Dubey)" />
+  <!-- <meta property="og:image" content="https://www.policedarpannews.in/Admin/assets/img/testImage.jpg"> -->
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:image:alt" content="Arch" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:url" content="" />
+  <!-- <link rel="shortcut icon" type="image/jpg" href="./assets/img/logoRounded.ico"> -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://www.policedarpannews.in/favicon.ico" type="image/x-icon">
+  <title>Arch &nbsp; | Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg shadow navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Editor</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-sm btn-outline-success mr-3 my-2 my-sm-0" type="button">Save</button>
+        <button onclick="logout()" class="btn btn-sm btn-outline-danger my-2 my-sm-0" type="button">Logout</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="mt-3 mb-4 border p-3 rounded">
+      <h4>Crousal 1</h4>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="custom-file form-control-sm">
+            <input type="file" accept="image/x-png,image/gif,image/jpeg" class="advtImg custom-file-input" id="advtImg5"
+              required>
+            <label class="custom-file-label" for="advtImg5">Select Image (HD) - Website Hero</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button onclick="advtUpload(5)" id="uploadBtn5" class="btn btn-primary rounded-pill btn-sm">
+            <div class="spinner-border spinner-border-sm text-light" id="uploadLoader5" style="display: none;"
+              role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            Upload
+          </button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Pharagraph</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="mt-3 mb-4 border p-3 rounded">
+      <h4>Crousal 2</h4>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="custom-file form-control-sm">
+            <input type="file" accept="image/x-png,image/gif,image/jpeg" class="advtImg custom-file-input" id="advtImg5"
+              required>
+            <label class="custom-file-label" for="advtImg5">Select Image (HD) - Website Hero</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button onclick="advtUpload(5)" id="uploadBtn5" class="btn btn-primary rounded-pill btn-sm">
+            <div class="spinner-border spinner-border-sm text-light" id="uploadLoader5" style="display: none;"
+              role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            Upload
+          </button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Pharagraph</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="mt-3 mb-4 border p-3 rounded">
+      <h4>Crousal 3</h4>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="custom-file form-control-sm">
+            <input type="file" accept="image/x-png,image/gif,image/jpeg" class="advtImg custom-file-input" id="advtImg5"
+              required>
+            <label class="custom-file-label" for="advtImg5">Select Image (HD) - Website Hero</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button onclick="advtUpload(5)" id="uploadBtn5" class="btn btn-primary rounded-pill btn-sm">
+            <div class="spinner-border spinner-border-sm text-light" id="uploadLoader5" style="display: none;"
+              role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            Upload
+          </button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Pharagraph</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      //alert(document.cookie);
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(nameEQ) != -1) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+    function redirect() {
+      var data = getCookie("login");
+      if (data != '') {
+        loginData = JSON.parse(data);
+        if (loginData.res != 'success') {
+          window.location.href = "../";
+        }
+      }else{
+        window.location.href = "../";
+      }
+
+    }
+    redirect()
+
+    function logout() {
+      document.cookie = "login=; expires="+ new Date(0).toUTCString();
+      window.location.href = "../";
+    }
+    function logout() {
+      document.cookie = 'login=; Path=/; Expires'+ new Date(0).toUTCString();
+      
+      window.location.href = "../";
+    }
+
+  </script>
+</body>
+
+</html>
